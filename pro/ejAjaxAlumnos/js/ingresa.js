@@ -51,8 +51,13 @@ $(document).ready(function() {
 				}
 
 				//Cambiar la liga del menú
-				$('#ligaSalir').attr('href','logout.php');
-				$('#ligaSalir').html('Salir');
+				oLigaS = $('<a/>');
+				oLigaS.attr('href','logout.php');
+				oLigaS.html('Salir');
+				 oLigaLis2 = $('<li/>');
+				 oLigaLis2.append(oLigaS)
+				$('#Salida').append(oLigaLis2);
+
 
 			}else{
 				//Error "de negocio"
