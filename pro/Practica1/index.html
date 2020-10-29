@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="js/jqueryui/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/jqueryui/jquery-ui.js"></script>
+  <script src="js/fuctions.js"></script>
+
+  <title>ZiSan Programming</title>
+</head>
+<body>
+ 
+<div class="titulo"><h1>ZiSan Programming - eLearning</h1></div>
+
+<div class="fecha">
+  <p>Ingresa una fecha: <input type="text" id="datepicker"></p>
+</div>  
+
+<!--Menu JQ UI-->
+<ul id="menu">
+  <li><div><a href="../Practica1">Inicio</a></div></li>
+  <li><div>Preguntas</div>
+      <ul>
+        <li><div><a href="#Preguntas1">Secci&oacute;n 1</a></div></li>
+        <li><div><a href="#Preguntas2">Secci&oacute;n 2</a></div></li>
+        <li><div><a href="preguntas3.html">Secci&oacute;n 3</a></div></li>
+      </ul>
+  </li>
+  <li><div><a href="https://github.com/NicodemoZilli/RIAS-Practica-1-JQuery" target="_blank">Ver C&oacute;digo</a></div></li>
+  <li><div><a href="../../../../../">Vista Principal</a></div></li>
+</ul>
+
+<br><br>
+  <h2 class="titulo" >Secci&oacute;n de Preguntas Sobre Programaci&oacute;n</h2>
+
+  <div id="Preguntas1">
+  <div id="accordion">
+    <h3>Pregunta 1</h3>
+    <div>
+      <h2>
+        ¿Qu&eacute; software de aplicaci&oacute;n es utilizado para poder practicar 
+        y obtener la l&oacute;gica de programaci&oacute;n?
+         <br> 
+        <div id="droppable" class="ui-widget-header">
+          <p>Pon aqu&iacute; tus respuesta</p>
+        </div>
+
+        <div id="draggable" class="ui-widget-content">
+          <p>PSInt</p>
+        </div>
+        <div id="draggable2" class="ui-widget-content">
+          <p>DFD</p>
+        </div>
+        
+      
+      </h2>
+    </div>
+    <h3>Pregunta 2</h3>
+    <div>
+      <h2>
+      Selecciona los lenguajes de programaci&oacute;n que conoscas:
+      </h2>
+      <div class="widget">
+        <fieldset>
+          <legend>Lenguajes: </legend>
+          <label for="checkbox-1">Java</label>
+          <input type="checkbox" name="checkbox-1" id="checkbox-1" class="check">
+          <label for="checkbox-2">JavaScript</label>
+          <input type="checkbox" name="checkbox-2" id="checkbox-2" class="check">
+          <label for="checkbox-3">Python</label>
+          <input type="checkbox" name="checkbox-3" id="checkbox-3" class="check">
+          <label for="checkbox-4">C/C++</label>
+          <input type="checkbox" name="checkbox-4" id="checkbox-4" class="check">
+        </fieldset>
+      </div>
+    </div>
+    <h3>Pregunta 3</h3>
+    <div>
+      <p>
+      De acuerdo a lo que sabes de los lenguajes de programaci&oacute;n, ordena los seguientes empezando
+      el que concideres es m&aacute;s dif&iacute;cil:
+      </p>
+      <ul id="sortable">
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Python</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Ruby</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>C++</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>JavaScritp</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Java</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>C</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>PHP</li>
+      </ul>
+    </div>
+    
+  </div>
+  
+
+</div>
+
+
+<br><br><br>
+<div id="Preguntas2">
+
+  <div id="accordion2">
+    <h3>Pregunta 4</h3>
+    <div>
+      <p>
+      <!-- Autocomplete -->
+  <div>
+	  <h2 class="demoHeaders">Java es un lenguaje de  <input id="autocomplete" title="type alto o bajo"> nivel</h2>
+  </div>
+      </p>
+    </div>
+    <h3>Pregunta 5</h3>
+    <div>
+      <p>
+        <!-- Button -->
+  <h2 class="demoHeaders">Una variable es un espacio de memoria reservado que se utiliza para almacenar un determinado valor que va a ser utilizado, modificado dentro de un programa</h2>
+  <button id="button">Verdadero</button>
+  <button id="button-icon">Falso</button>
+  
+      </p>
+    </div>
+    <h3>Pregunta 6</h3>
+    <div>
+      <p>
+      <!-- Chechboxradio -->
+  <h2 class="demoHeaders">¿A que llamamos pseudocodigo?</h2>
+  <form style="margin-top: 1em;">
+	  <div id="radioset">
+		  <input type="radio" id="radio1" name="radio"><label for="radio1">Un dibujo de lo que realizará el programa codificado</label> <br>
+		  <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Describe un algoritmo utilizando una mezcla de frases en lenguaje común, instrucciones de programación y palabras clave que definen las estructuras básicas</label> <br>
+		  <input type="radio" id="radio3" name="radio"><label for="radio3">Una combinacion de distintos lenguajes de programacion</label>
+	  </div>
+  </form>
+      </p>
+    </div>
+    <h3>Pregunta 7</h3>
+    <div>
+      <p>
+      
+  <!-- Controlgroup -->
+  <h2 class="demoHeaders">¿Cuáles son los lenguajes de programación más comunes?</h2>
+  <div id="controlgroup">
+	  <label for="transmission-standard">C++</label>
+	  <input type="radio" name="transmission" id="transmission-standard">
+	  <label for="transmission-automatic">ADA</label>
+	  <input type="radio" name="transmission" id="transmission-automatic">
+	  <label for="insurance">Java</label>
+	  <input type="checkbox" name="insurance" id="insurance">
+	  <button>FORTRAN</button>
+  </div>
+  
+      </p>
+    </div>
+  </div>
+	
+</div>
+  
+  
+
+
+<!--
+<div id="resizable" class="ui-widget-content">
+  <h3 class="ui-widget-header">Resizable</h3>
+</div>
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+    
+    /*background: #314755;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    /*background: #1488CC;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: #BBD2C5;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: #536976;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    /*background: #12c2e9;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: #c31432;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: Verdana,Arial,sans-serif;
+    color: black;
+}
+
+.titulo{
+    text-align: center;
+}
+
+#resizable { 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+}
+#resizable h3 { 
+    text-align: center; 
+    margin: 0; 
+}
+.ui-menu { 
+    width: 150px; 
+}
+.fecha{
+    float: right;
+}
+
+#accordion,#accordion2{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+#sortable li span { position: absolute; margin-left: -1.3em; }
+
+#draggable { width: 150px; height: 80px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+#draggable2 { width: 150px; height: 80px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+  #droppable { width: 90%; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+
+
+
+  .ui-controlgroup-vertical {
+    width: 150px;
+  }
+  .ui-controlgroup.ui-controlgroup-vertical > button.ui-button,
+  .ui-controlgroup.ui-controlgroup-vertical > .ui-controlgroup-label {
+    text-align: center;
+  }
+  .ui-controlgroup-horizontal .ui-spinner-input {
+    width: 20px;
+  }

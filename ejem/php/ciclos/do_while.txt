@@ -1,0 +1,11 @@
+<?php
+do{
+
+$num = 0;
+echo "hola ";
+
+$num++;
+}
+while ($num < 10);
+
+?>

@@ -1,0 +1,44 @@
+body{
+  background-color: #e6e6fa;
+  font-family: Verdana,Arial,sans-serif;
+
+}
+h1{
+  text-align: center;
+}
+.button{
+  margin-top: 50px;
+  text-align: center;
+}
+#tabs{
+  width: 100%;
+}
+.ui-menu { 
+  width: 150px;
+  height: 150px; 
+}
+ol{
+  list-style: none;
+  width: 170px;
+  height: 480px;
+}
+li{
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+#lenguajes li{
+  background-color: #5499C7;
+}
+#todo li{
+  background-color: #1F618D;
+}
+
+fieldset{
+  float: left;
+  margin: 30px;
+  width: 200px;
+  height: 400px;
+  border: 5px solid black;
+}
