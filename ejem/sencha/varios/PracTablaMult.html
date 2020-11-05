@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tablas De Multiplicar </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link rel="stylesheet" type="text/css" href="jslib/resources/theme-triton-all.css">
+    <script type="text/javascript" src="jslib/ext-all.js"></script>
+    <script type="text/javascript" src="jslib/theme-triton.js"></script>  
+    <script type="text/javascript" src="jslib/locale-es.js"></script>
+        
+    <script type="text/javascript">
+        function generar(){
+			var Num = Ext.get("txtNum").getValue();
+			var sContenido = "<table id='tbl'>";
+			for(i=0; i<10; i++){
+            sContenido = sContenido+"<tr><td>";
+switch(i){
+        
+case 0: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res0'>";
+            break;
+case 1: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res1'>";
+            break;
+case 2: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res2'>";
+            break;
+case 3: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res3'>";
+            break;
+case 4: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res4'>";
+            break;
+case 5: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res5'>";
+            break;
+case 6: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res6'>";
+            break;
+case 7: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res7'>";
+            break;
+case 8: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res8'>";
+            break;
+case 9: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res9'>";
+            break;
+case 10: sContenido = sContenido + Num + "</td><td> x </td><td>" + (i+1) + "</td><td><input type='text' id='res10'>";
+            break;
+            
+}
+sContenido = sContenido+"</td></tr>";
+            }
+sContenido = sContenido + "</table>"
+Ext.get("initab").insertHtml("afterBegin", sContenido);
+                    }
+
+function calculo(){
+var Num = Ext.get("txtNum").getValue();
+var prom = 0;
+var res = [];
+    
+    for(i=1; i<11; i++){
+        switch(i){
+            case 1: res[i] =Ext.get("res0").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 2: res[i] = Ext.get("res1").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 3: res[i] = Ext.get("res2").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 4: res[i] = Ext.get("res3").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 5: res[i] = Ext.get("res4").getValue();
+                if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 6: res[i] = Ext.get("res5").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 7: res[i] = Ext.get("res6").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 8: res[i] = Ext.get("res7").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 9: res[i] = Ext.get("res8").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+            case 10: res[i] = Ext.get("res9").getValue();
+				if((Num*i)==res[i])
+				    prom = prom + 1; break;
+				}
+			}
+Ext.get("calif").insertHtml("afterBegin", "Tu calificacion es: " + prom);
+        }
+</script>
+</head>
+    
+<body>
+<center> 
+<form>
+<br/><br/>
+    <h1>Tabla De Multiplicar Usando Sencha</h1>
+    <h3>Ingrese el Numero de Tabla que Quiere Practicar</h3>
+        
+	Numero de Tabla: <input type="text" id="txtNum" /> <br><br/>
+	<input type="button" value="Generar Tabla"  onclick="generar();this.disabled=true;" /><br/>
+	<div id="initab">
+	</div>
+    <br>
+	<input type="button" value="Evaluar Tabla" onclick="calculo();this.disabled=true;"><br/>
+	<div id="calif">
+	</div>
+    <br>
+	<input type="submit" value="Volver a Intentar"/>
+	</form> 
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!--
+Archivo:  ejSelectores.html
+Objetivo: ejemplo de afectaciones visuales a elementos con ExtJS
+Autor:    BAOZ
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Hola Mundo con Sencha ExtJS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../jslib/theme-triton/resources/theme-triton-all.css">
+        <script type="text/javascript" src="../jslib/ext-all.js"></script>
+        <script type="text/javascript" src="../jslib/theme-triton/theme-triton.js"></script>
+        <script type="text/javascript" src="js/selectores.js"></script>
+		<style>
+			.claseRojo{
+				color:red
+			}
+			.claseBordesInputs{
+				border-style:dashed;
+				border-color:red
+			}
+			.claseBordesOtro{
+				border-style:inset;
+				border-color:blue;
+				border-width:medium;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Primer texto</p>
+		<br/>
+		Texto sin p&aacute;rrafo
+		<br/>
+		<h3>Una cabecera</h3>
+		<p>Segundo texto</p>
+		<form>
+			Un campo de texto <input type="text"/><br/>
+			Un bot&oacute;n <input type="button" value="Ejemplo"/><br/>
+			Un elemento con id <input id="otro"/>
+		</form>
+	</body>
+</html>
