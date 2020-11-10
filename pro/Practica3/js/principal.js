@@ -26,7 +26,7 @@ Ext.onReady(function(){
             },{
               text: 'Ver Código',
               href: 'https://github.com/NicodemoZilli/Codigos-RIAS2020/tree/master/pro/Practica3',
-              hrefTarget: '_self'
+              hrefTarget: '_blank'
             },{
               text: 'Vista Principal',
               href: '../../../../../',
