@@ -41,10 +41,10 @@ Ext.onReady(function(){
 								Ext.get("ligaAlumnos").set({href:"tabAlumnos.php"});
 								Ext.get("ligaAlumnos").setHtml("Ver Alumnos");
 							}
-							else if (action.result.sTipo=="Alumno")
+							else
 							{
-							  Ext.get("ligaMaterias").set({href:"tabMaterias.php"});
-								Ext.get("ligaMaterias").setHtml("Ver Materias");
+							Ext.get("ligaMaterias").set({href:"tabMaterias.php"});
+								Ext.get("ligaMaterias").setHtml("Ver Materias");	
 							}
 							Ext.get("ligaSalir").set(
 							{href: 'logout.php'});
