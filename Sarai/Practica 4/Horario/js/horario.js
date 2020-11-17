@@ -30,7 +30,7 @@ Ext.onReady(function(){
 	Ext.create('Ext.grid.Panel', {
 		title: 'Horario 7mo. Semestre',
 		store: Ext.data.StoreManager.lookup('datoshorario'),
-		columns: [ 
+		columns: [
 			{ text: 'Hora',
 				dataIndex: 'hora',
         height: 40,
@@ -89,6 +89,7 @@ Ext.onReady(function(){
        {clave:'7gBC',nom:'Aplicaciones de software para la Web',prof:'Alma Ivonne S&aacute;nchez Garc&iacute;a', cre:'5',aula:'L6'},
        {clave:'7g4E',nom:'Programaci&oacute;n L&oacute;gica y Funcional',prof:'Rafael Herrera Garc&iacute;a', cre:'4',aula:'L5'},
        {clave:'7gAC',nom:'Sistemas Programables',prof:'Rafael Herrera Garc&iacute;a', cre:'4',aula:'LC02'},
+       {clave:'IN4F',nom:'Ingl&eacute;s Nivel 4',prof:'Segio Huerta Trujillo', cre:'2'},
  		]
  	});
 
