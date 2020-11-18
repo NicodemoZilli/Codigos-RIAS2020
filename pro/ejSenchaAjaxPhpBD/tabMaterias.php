@@ -22,7 +22,7 @@ if (isset($_SESSION["usu"])){
 	}
 	else
 		$sErr = "Falta establecer el login";
-	
+
 	if ($sErr == ""){
 		include_once("arriba.php");
 		include_once("menu.php");
@@ -33,45 +33,14 @@ if (isset($_SESSION["usu"])){
 	}
  ?>
  <div id="contenido">
-			
+
 			<section>
-				
-					<table border="1">
-						<tr>
-							<td>Clave</td>
-							<td>Nombre</td>
-							<td>Creditos</td>
-							
-						</tr>
-						<?php
-							if ($arrMaterias!=null){
-								foreach($arrMaterias as $oMat){
-						?>
-						<tr>
-							<td class="llave"><?php echo $oMat->getNumClave(); ?></td>
-							<td><?php echo $oMat->getNombre(); ?></td>
-							<td><?php echo $oMat->getNumCreditos() ; ?></td>
-							
-							
-							
-						</tr>
-						<?php 
-								}//foreach
-							}else{
-						?>     
-						<tr>
-							<td colspan="4">No hay datos</td>
-						</tr>
-						<?php
-							}
-						?>
-					</table>
-					
-				</form>
+			<script src="js/tablaMaterias.js"></script>
+			<div id="espacio1">
+
+			</div>
 			</section>
 		</div>
 <?php
 include_once("abajo.php");
 ?>
-
-

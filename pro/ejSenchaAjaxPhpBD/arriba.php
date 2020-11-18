@@ -7,9 +7,9 @@
 			<!-- Inclusión de hojas de estilos -->
 			<link rel="stylesheet" type="text/css" href="css/estilo1.css">
 			<!-- Inclusión de biblioteca Sencha ExtJS -->
-			<link rel="stylesheet" type="text/css" href="jslib/theme-classic/resources/theme-classic-all.css">
+			<link rel="stylesheet" type="text/css" href="../../ejem/sencha/jslib/theme-classic/resources/theme-classic-all.css">
 			<script type="text/javascript" src="../../ejem/sencha/jslib/ext-all.js"></script>
-			<script type="text/javascript" src="../../ejem/sencha/jslib//theme-classic/theme-classic.js"></script>
+			<script type="text/javascript" src="../../ejem/sencha/jslib/theme-classic/theme-classic.js"></script>
 	</head>
 	<body>
         <div id="header">

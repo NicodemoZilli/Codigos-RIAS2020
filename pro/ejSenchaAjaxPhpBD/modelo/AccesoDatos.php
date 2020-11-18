@@ -2,26 +2,27 @@
 /*************************************************************/
 /* AccesoDatos.php
  * Objetivo: clase que encapsula el acceso a la base de datos (caso PDO)
- *			 Requiere habilitar php_pdo.dll y php_pdo_tipogestor.dll si 
+ *			 Requiere habilitar php_pdo.dll y php_pdo_tipogestor.dll si
  *			 es PHP versión < 5.3
  * Autor: BAOZ
  *************************************************************/
  error_reporting(E_ALL);
+ 
  class AccesoDatos{
- private $oConexion=null; 
+ private $oConexion=null;
 		/*Realiza la conexión a la base de datos*/
      	function conectar(){
 		$bRet = false;
 			try{
-				$this->oConexion = new PDO("pgsql:dbname=inscripciones; host=localhost; user=usrinscrip; password=usrinscrip1"); 
-				//$this->oConexion = new PDO("mysql:host=localhost;dbname=inscripciones","usrinscrip","usrinscrip1",  array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'")); 
+				$this->oConexion = new PDO("pgsql:dbname=inscripciones; host=localhost; user=usrinscrip; password=usrinscrip1");
+				//$this->oConexion = new PDO("mysql:host=localhost;dbname=inscripciones","usrinscrip","usrinscrip1",  array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"));
 				$bRet = true;
 			}catch(Exception $e){
 				throw $e;
 			}
 			return $bRet;
 		}
-		
+
 		/*Realiza la desconexión de la base de datos*/
      	function desconectar(){
 		$bRet = true;
@@ -30,7 +31,7 @@
 			}
 			return $bRet;
 		}
-		
+
 		/*Ejecuta en la base de datos la consulta que recibió por parámetro.
 		Regresa
 			Nulo si no hubo datos
@@ -55,7 +56,7 @@
 				throw $e;
 			}
 			if ($rst){
-				foreach($rst as $oLinea){ 
+				foreach($rst as $oLinea){
 					foreach($oLinea as $llave=>$sValCol){
 						if (is_string($llave)){
 							$arrRS[$i][$j] = $sValCol;
@@ -68,7 +69,7 @@
 			}
 			return $arrRS;
 		}
-		
+
 		/*Ejecuta en la base de datos el comando que recibió por parámetro
 		Regresa
 			el número de registros afectados por el comando*/
