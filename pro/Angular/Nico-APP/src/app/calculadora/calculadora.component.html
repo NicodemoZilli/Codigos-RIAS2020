@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="header"><h2>Calculadora</h2> 
+</div><div class="grid"><div class="row">
+    <div class="col-6"><div class="operation">
+        <div class="row">
+            <div class="col-12">
+                <input [(ngModel)]="num1" type="number" name="num1" placeholder="numero">
+            </div></div><div class="row">
+                <div class="col-12">
+                    <input [(ngModel)]="num2" type="number" name="num2" placeholder="numero">
+                </div></div><div><div class="col-12">
+                    <button (click)="sumar()" class="button">Sumar </button>
+                </div></div>
+            </div></div>
+            <div class="col-6"><div class="result">
+                <span>Resultado: {{res}}</span>
+                
+                      
+                    
+</div>
+
+
+</div>
+</div></div>
+</div>
