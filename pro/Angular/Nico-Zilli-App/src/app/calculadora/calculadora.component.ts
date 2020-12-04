@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-calculadora',
@@ -9,13 +6,28 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./calculadora.component.css']
 })
 export class CalculadoraComponent implements OnInit {
-  public num1 : number;
-  public num2 : number;
-  public res : number;
+  public num1 : number=0;
+  public num2 : number=0;
+  public res : number=0;
   constructor() { }
     
      public sumar():number{
       return this.res=this.num1+this.num2;
+     
+     }
+
+     public restar():number{
+      return this.res=this.num1-this.num2;
+     
+     }
+
+     public multiplicar():number{
+      return this.res=this.num1*this.num2;
+     
+     }
+
+     public dividir():number{
+      return this.res=this.num1/this.num2;
      
      }
 

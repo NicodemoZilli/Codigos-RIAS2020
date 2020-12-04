@@ -3,12 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Nico-APP": {
+    "Nico-Zilli-App": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -20,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Nico-APP",
+            "outputPath": "dist/Nico-Zilli-App",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -68,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Nico-APP:build"
+            "browserTarget": "Nico-Zilli-App:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Nico-APP:build:production"
+              "browserTarget": "Nico-Zilli-App:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Nico-APP:build"
+            "browserTarget": "Nico-Zilli-App:build"
           }
         },
         "test": {
@@ -94,7 +91,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -116,19 +113,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Nico-APP:serve"
+            "devServerTarget": "Nico-Zilli-App:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Nico-APP:serve:production"
+              "devServerTarget": "Nico-Zilli-App:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Nico-APP",
+  "defaultProject": "Nico-Zilli-App",
   "cli": {
-    "analytics": "f26a2cd7-e134-43e5-982f-87e91a16b380"
+    "analytics": "ed897585-0639-47a5-b8c7-edc2734f1149"
   }
 }
