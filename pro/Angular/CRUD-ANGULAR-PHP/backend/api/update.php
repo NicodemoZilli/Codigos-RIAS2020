@@ -20,7 +20,7 @@ if(isset($postdata) && !empty($postdata))
   $sapepat = mysqli_real_escape_string($con, trim($request->sapepat));
 
   // Update.
-  $sql = "UPDATE Usuario SET snombre='$snombre',sapepat='$sapepat' WHERE cve = '{$cve}' LIMIT 1";
+  $sql = "UPDATE usuario SET snombre='$snombre',sapepat='$sapepat' WHERE sCveUsuario = '{$cve}' LIMIT 1";
 
   if(mysqli_query($con, $sql))
   {

@@ -1,0 +1,16 @@
+*{
+    font-family: Arial;
+    margin: 0%;
+    padding: 0%;
+    
+  }
+  h1{
+    text-align: center;
+    color: #ffffff;
+    
+  }
+  div{
+      background-color:#154360;
+      padding: 20px;
+
+  }

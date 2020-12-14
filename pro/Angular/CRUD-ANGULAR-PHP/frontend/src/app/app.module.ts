@@ -6,11 +6,13 @@ import { FormsModule } from  '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardmComponent } from './dashboardm/dashboardm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardmComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,35 @@
+<h1>Lista de Materias</h1>
+<div>
+
+  <table border='1' width='100%' style='border-collapse: collapse;'>
+    <tr>
+      <th>Clave</th>
+      <th>Nombre</th>
+      <th>Número de Créditos</th>
+      <th>Operaciones</th>
+
+    </tr>
+
+    <tr *ngFor="let materia of materias">
+      <td>{{ materia.cve }}</td>
+      <td>{{ materia.snombre }}</td>
+      <td>{{ materia.scredi }}</td>
+      <td>
+        <button (click)="deleteMateria(materia.cve)">Borrar</button>
+        <button (click)="selectMateria(materia)">Modificar</button>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <form #m = "ngForm">
+    <label>Clave</label>
+    <input type="number" name="cve" [(ngModel)] = "selectedMateria.cve">
+    <br>
+    <label>Nombre</label>
+    <input type="text" name="snombre" [(ngModel)] = "selectedMateria.snombre"> 
+    <br>
+    <label>Num. Créditos</label>
+    <input type="number" name="scredi" [(ngModel)] = "selectedMateria.scredi">
+    <br>
+    <input id="sub" type="button" (click)="createOrUpdateMaterias(m)" value="Crear o Modificar Materia">
+  </form>

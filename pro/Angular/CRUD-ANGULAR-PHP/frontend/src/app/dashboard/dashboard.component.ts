@@ -6,10 +6,14 @@ selector: 'app-dashboard',
 templateUrl: './dashboard.component.html',
 styleUrls: ['./dashboard.component.css']
 })
+
 export class DashboardComponent implements OnInit {
-usuarios: Usuario[] = [];
-selectedUsuario: Usuario = { cve:'', snombre:'', sapepat: ''};
-constructor(private apiService: ApiService) { }
+
+    usuarios: Usuario[] = [];
+
+    selectedUsuario: Usuario = { cve:'', snombre:'', sapepat: ''};
+
+    constructor(private apiService: ApiService) { }
 
 ngOnInit() {
 this.readUsuario();
@@ -21,25 +25,24 @@ this.usuarios = usuarios;
 console.log(this.usuarios);
 })
 }
+
 createOrUpdateUsuario(form: { value: Usuario; }){
 
-if(this.selectedUsuario && this.selectedUsuario.cve){
-      form.value.cve = this.selectedUsuario.cve;
-     console.log(this.selectedUsuario.cve);
-this.apiService.updateUsuario(form.value).subscribe((usuarios: Usuario)=>{
-this.readUsuario();
-console.log(form.value.cve);
-console.log("Usuario actualizado" , usuarios);
-});
+if( this.selectedUsuario && this.selectedUsuario.cve) {
 
-}
-else{
 
-this.apiService.createUsuario(form.value).subscribe((usuarios: Usuario)=>{
-this.readUsuario();
-console.log("Usuario creado, ", usuarios);
-});
-
+    this.apiService.createUsuario(form.value).subscribe((usuarios: Usuario)=>{
+        this.readUsuario();
+        console.log("Usuario creado, ", usuarios);
+    });
+    
+    form.value.cve = this.selectedUsuario.cve;
+    console.log(this.selectedUsuario.cve);
+    this.apiService.updateUsuario(form.value).subscribe((usuarios: Usuario)=>{
+        this.readUsuario();
+        console.log(form.value.cve);
+        console.log("Usuario actualizado" , usuarios);
+    });
 }
 
 }

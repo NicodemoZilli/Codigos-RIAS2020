@@ -11,7 +11,7 @@ if(!$cve)
 }
 
 // Delete.
-$sql = "DELETE FROM `usuario` WHERE `cve` ='{$cve}' LIMIT 1";
+$sql = "DELETE FROM `usuario` WHERE `sCveUsuario` ='{$cve}' LIMIT 1";
 
 if(mysqli_query($con, $sql))
 {
@@ -21,3 +21,5 @@ else
 {
   return http_response_code(422);
 }
+
+?>
